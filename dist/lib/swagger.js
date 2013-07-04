@@ -612,7 +612,7 @@
       if (includeApiKey == null) {
         includeApiKey = true;
       }
-      url = this.resource.basePath + this.pathJson();
+      url = this.pathJson();
       _ref = this.parameters;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         param = _ref[_i];
