@@ -219,7 +219,7 @@
         if (this.path == null) {
           this.api.fail("SwaggerResources must have a path.");
         }
-        this.url = this.api.suffixApiKey(this.api.basePath.replace('/api-docs.json', '') + this.path.replace('{format}', 'json'));
+        this.url = this.api.suffixApiKey(this.api.basePath + this.path.replace('{format}', 'json'));
         console.log('basePath: ' + this.api.basePath);
         console.log('url: ' + this.url);
         this.api.progress('fetching resource ' + this.name + ': ' + this.url);
